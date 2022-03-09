@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>实验室可视化志愿填报分析系统</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">主页</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">关于</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu  无实用性，删除该系统 -->
+      
+      <!-- Notifications Dropdown Menu 保留提醒系统-->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">西南科技大学</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">用户名</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                实验室介绍
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>当前页面</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>专业，兴趣测试</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">实验室介绍</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">主页</a></li>
+              <li class="breadcrumb-item active">实验室介绍</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card card-primary card-outline">
+              <div class="card-body">
+                <h2 class="card-title" style="font-size: 22px;">智能计算与模式识别研究室</h2>
+                <p class="card-text">
+                  本实验室通过与信号处理、人工智能、应用数学等相关学科的交流与合作，在智能计算与模式识别的研究和应用开发方面，围绕数值分析、优化算法、图像处理、模式识别等方向中的急需解决的应用基础中的难题开展研究。
+                </p>
+                <a href="lab1.html" class="card-link">实验室详情</a>
+              </div>
+            </div>
+            <div class="card card-primary card-outline">
+              <div class="card-body">
+                <p class="card-title" style="font-size: 22px;">嵌入式技术研究室</p >
+                <p class="card-text">
+                  实验室主要进行计算机控制技术和嵌入式系统技术的研究，面向行业应用的嵌入式系统为主要目标。立足于汽车电子，数控机床，医疗设备，物联网技术，核监测技术等相关行业，研究内容涉及嵌入式基础平台，嵌入式实时操作系统，嵌入式中间件软件开发，设备驱动开发。本实验室拥有完善的高端ARM嵌入式开发系统，功能强大的DSP开发平台和FPGA开发平台， 其中部分开发平台属完全自主开发。拥有完整的硬件开发验证设备，包括BGA器件焊接平台，拆焊台，数字存储示波器，任意波形信号发生器，逻辑分析仪，LCR测试仪，高精密数字电源，高温实验箱等。
+                </p>
+                <a href="#" class="card-link">实验室详情</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card card-primary card-outline">
+              <div class="card-body">
+                <h2 class="card-title" style="font-size: 22px;">虚拟实境与仿真技术研究室</h2>
+                <p class="card-text">
+                  虚拟现实与仿真技术研究室依托西南科技大学计算机科学与技术学院，是西南科技大学董事单位共建研究实验室。研究室以“产学研用”的发展思路，以求实、发展、竞争与开放的精神，在计算机图形学、图像及视频处理、人机交互、人工智能等领域开展科学研究工作和硕士研究生培养工作。并通过与控制、材料、物理、数学等不同学科方向的合作、交叉，开展虚拟现实基础、应用基础、关键技术方面的原始创新和集成创新。近年来研究室承担和参与了包括国家863计划、国家自然科学基金、国防科技计划纵向科研项目在内的多项科研项目。通过上述科研项目的研究，取得一系列理论和技术创新成果，在国内外著名学术刊物和学术会议发表学术论文数十篇，多项成果获得软件著作权和发明专利。研究室经过多年的科研发展和积累，在图像图形处理技术、虚拟现实技术、科学计算可视化等方面形成了一定的特色和优势。
+                </p>
+                <a href="lab1.html" class="card-link">实验室详情</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card card-primary card-outline">
+              <div class="card-body">
+                <h2 class="card-title" style="font-size: 22px;">科学计算与软件工程实验室</h2>
+                <p class="card-text">
+                  科学计算与软件工程团队集教学科研于一体，长期从事计算机科学与技术领域中的科学计算与多学科软件研究。目前，团队依托国防科工局军用软件特色学科、燃烧与空气动力研究中心、四川省智能电器与智能系统重点实验室、总参民兵632信息分队和四川省计算机应用实验教学示范中心等平台，形成燃烧与气动力云计算开发平台的稳定方向，为国防军工培养和输送了一大批优秀人才。同时，团队与绵阳市中心医院、上海联影智能医疗科技有限公司合作，在人工智能医学影像领域开展一系列研究，主要集中于肺结节多语义迁移学习、肺结节多语义细粒度分类、胸腔多病变少样本增量学习、胸部X线气胸分割及诊断等方面，曾多次在高水平国际学术期刊和会议上发表了相关论文。
+                </p>
+                <a href="lab1.html" class="card-link">实验室详情</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card card-primary card-outline">
+              <div class="card-body">
+                <h2 class="card-title" style="font-size: 22px;">实验室5</h2>
+                <p class="card-text">
+                  实验室简述
+                </p>
+                <a href="lab1.html" class="card-link">实验室详情</a>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h4>欢迎使用本系统！</h4>
+      <p>左侧为各实验室的简述，详细信息请点击“实验室详情”来查看</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
