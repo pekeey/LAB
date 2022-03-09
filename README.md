@@ -14,9 +14,9 @@ Highly customizable and easy to use. Fits many screen resolutions from small mob
 **Preview on [AdminLTE.io](https://adminlte.io/themes/v3)**
 
 ## 预览
-
-
-
+![Alt text](preview/start.png "主页")
+![Alt text](preview/lab.png "实验室详情")
+![Alt text](preview/teacher.png "老师详情")
 
 ## License
 
